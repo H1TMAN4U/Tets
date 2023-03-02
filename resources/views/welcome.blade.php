@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+@vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/dark-light-mode.js'])
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
