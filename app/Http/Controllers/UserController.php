@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
@@ -54,10 +55,19 @@ class UserController extends Controller
     }
     public function destroy(User $user)
     {
-        if ($user->hasRole('admin')) {
+        if ($user->hasRole('Admin')) {
             return back()->with('message', 'you are admin.');
         }
         $user->delete();
         return back()->with('message', 'User deleted.');
     }
+    // public function check()
+    // {
+    //     $id=Auth::user()->id;
+    //     $user=User::find($id);
+    //     // if($use ) if user  no roles gives user role -- wrong written kks ar model id
+    //         $user->assignRole();
+    //     return dd($user);
+
+    // }
 }

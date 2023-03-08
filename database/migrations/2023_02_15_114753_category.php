@@ -21,8 +21,13 @@ return new class extends Migration
         $date=Carbon::now();
         DB::table('category')->insert(
             array(
-                ['name' => 'Edible'],
-                ['name' => 'Drinkable']
+                ['name' => 'DINNERS'],
+                ['name' => 'LUNCHES'],
+                ['name' => 'BREAKFAST'],
+                ['name' => 'DESSERTS'],
+                ['name' => 'SNACKS AND APPETIZERS'],
+                ['name' => 'DRINKS'],
+                ['name' => 'HOLIDAYS AND SEASONS'],
             )
         );
     }

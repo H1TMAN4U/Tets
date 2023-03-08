@@ -27,11 +27,11 @@ class AdminSeeder extends Seeder
         //     }));
             User::create([
 
-            'name'=>'admin',
+            'name'=>'Admin',
             'email'=>'admin@gmail.com',
             'email_verified_at'=> now(),
             'password'=> bcrypt('adminpass')
 
-            ])->assignRole('writer', 'admin');
+            ])->assignRole('Admin');
     }
 }

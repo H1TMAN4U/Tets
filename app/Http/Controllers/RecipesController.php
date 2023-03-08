@@ -158,13 +158,13 @@ class RecipesController extends Controller
         // return dd()
     }
 
-    public function search()
-    {
-        $data = Recipes::latest()->paginate(5);
-        // $category=RecipesController::with('getCategory')->get();
-        $search_text=$_GET["query"];
-        $recipes = Recipes::where('name','LIKE', '%'.$search_text.'%')->get();
-        return view('recipes.search',
-        ["recipes"=>$recipes], compact('data'));
-    }
+    // public function search()
+    // {
+    //     $data = Recipes::latest()->paginate(5);
+    //     // $category=RecipesController::with('getCategory')->get();
+    //     $search_text=$_GET["query"];
+    //     $recipes = DB::table("recipes")->where('name','LIKE', '%'.$search_text.'%')->get();
+    //     return view('recipes.search',
+    //     ["recipes"=>$recipes], compact('data'));
+    // }
 }

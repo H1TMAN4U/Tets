@@ -17,8 +17,8 @@ class Category extends Model
     'id',
     'name'
     ];
-    public function recipe()
-    {
-        return $this->belongsTo(Recipe::class);
-    }
+    // public function recipe()
+    // {
+    //     return $this->belongsTo(Recipe::class);
+    // }
 }

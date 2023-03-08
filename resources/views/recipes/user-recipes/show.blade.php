@@ -1,6 +1,6 @@
 @extends('recipes.user-recipes/master')
 @section('content')
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pb-8 break-all" style="width: 100%; height:100vh;">
+    {{-- <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pb-8 break-all" style="width: 100%; height:100vh;">
         <div class="grid grid-cols-2 flex w-full rounded-t-lg dark:bg-gray-800" style="height:55vh">
             <div class="m-8">
                 @foreach ($recipes as $value)
@@ -30,13 +30,13 @@
                 @foreach($recipes as $value)
                     <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
                     <div class="space-y-0.5 font-medium dark:text-white text-left">
-                    {{-- <div>{{$value->ingredients[0]}}</div> --}}
+                    <div>{{$value->ingredients[0]}}</div>
                 @endforeach
                 <div class="text-sm font-light text-gray-500 dark:text-gray-400">CTO at Google</div>
                 </div>
             </div>
         </div>
-    </main>
+    </main> --}}
 @endsection('content')
 
 
